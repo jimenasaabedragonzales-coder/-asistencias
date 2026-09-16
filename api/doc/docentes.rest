@@ -1,0 +1,28 @@
+### Consulta de docentes
+GET http://api.asistenciasexto/docentes
+
+### Consulta de docente por id
+GET http://api.asistenciasexto/docentes/1
+
+### Modificar Docente
+PUT http://api.asistenciasexto/docentes/1
+Content-Type: application/json
+
+{
+  "nombre":"Juan",
+  "apellido":"Perez",
+  "telefono":"70011111"
+}
+
+### Adicionar Docente
+POST http://api.asistenciasexto/docentes
+Content-Type: application/json
+
+{
+  "nombre":"Juanito",
+  "apellido":"Perezoso",
+  "telefono":"70022222"
+}
+
+### Eliminar Docente
+DELETE http://api.asistenciasexto/docentes/7

@@ -1,0 +1,31 @@
+### Consulta de usuario
+GET http://api.asistenciasexto/users
+
+### Consulta de usuario por id
+GET http://api.asistenciasexto/users/2
+
+### Modificar Usuario
+PUT http://api.asistenciasexto/users/1
+Content-Type: application/json
+
+{
+  "username": "mquispe2",
+  "password_hash": "$2y$10$hash_de_ejemplo2",
+  "id_docente": 1,
+  "id_estudiante": null
+}
+
+### Adicionar Usuario
+POST http://api.asistenciasexto/users
+Content-Type: application/json
+
+{
+  "username": "admin22",
+  "password_hash": "$2y$10$hash_de_ejemplo",
+  "id_docente": null,
+  "id_estudiante": null
+}
+
+### Eliminar Usuario
+DELETE http://api.asistenciasexto/users/10
+

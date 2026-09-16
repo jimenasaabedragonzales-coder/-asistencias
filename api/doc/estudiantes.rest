@@ -1,0 +1,27 @@
+### Consulta de estudiantes
+GET http://api.asistenciasexto/estudiantes
+
+### Modificar Estudiante
+PUT http://api.asistenciasexto/estudiantes/1
+Content-Type: application/json
+
+{
+  "nombre":"Juan",
+  "apellido":"Perez",
+  "direccion":"Calle Falsa 123",
+  "telefono":"70011111"
+}
+
+### Adicionar Estudiante
+POST http://api.asistenciasexto/estudiantes
+Content-Type: application/json
+
+{
+  "nombre":"Maria",
+  "apellido":"Gonzalez",
+  "direccion":"Barrio Norte",
+  "telefono":"70022222"
+}
+
+### Eliminar Estudiante
+DELETE http://api.asistenciasexto/estudiantes/13
