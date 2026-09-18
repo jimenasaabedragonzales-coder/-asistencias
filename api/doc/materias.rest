@@ -1,11 +1,11 @@
 ### Consulta de materias
-GET http://api.asistenciasexto/materias
+GET http://api.controlasistenciasexto/materias
 
 ### Consulta de materia por id
-GET http://api.asistenciasexto/materias/1
+GET http://api.controlasistenciasexto/materias/1
 
 ### Modificar materia
-PUT http://api.asistenciasexto/materias/1
+PUT http://api.controlasistenciasexto/materias/1
 Content-Type: application/json
 
 {
@@ -13,7 +13,7 @@ Content-Type: application/json
 }
 
 ### Adicionar materia
-POST http://api.asistenciasexto/materias
+POST http://api.controlasistenciasexto/materias
 Content-Type: application/json
 
 {
@@ -21,4 +21,4 @@ Content-Type: application/json
 }
 
 ### Eliminar materia
-DELETE http://api.asistenciasexto/materias/1
+DELETE http://api.controlasistenciasexto/materias/1

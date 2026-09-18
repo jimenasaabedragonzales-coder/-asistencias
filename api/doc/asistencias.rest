@@ -1,11 +1,11 @@
 ### Consulta de asistencias
-GET http://api.asistenciasexto/asistencias
+GET http://api.controlasistenciasexto/asistencias
 
 ### Consulta de asistencia por id
-GET http://api.asistenciasexto/asistencias/1
+GET http://api.controlasistenciasexto/asistencias/1
 
 ### Modificar Asistencia
-PUT http://api.asistenciasexto/asistencias/1
+PUT http://api.controlasistenciasexto/asistencias/1
 Content-Type: application/json
 
 {
@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 
 ### Adicionar Asistencia
-POST http://api.asistenciasexto/asistencias
+POSThttp://api.controlasistenciasexto/asistencias
 Content-Type: application/json
 
 {
@@ -31,4 +31,4 @@ Content-Type: application/json
 }
 
 ### Eliminar Asistencia
-DELETE http://api.asistenciasexto/asistencias/6
+DELETE http://api.controlasistenciasexto/asistencias/1

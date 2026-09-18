@@ -1,11 +1,11 @@
 ### Consulta de docentes
-GET http://api.asistenciasexto/docentes
+GET http://api.controlasistenciasexto/docentes
 
 ### Consulta de docente por id
-GET http://api.asistenciasexto/docentes/1
+GET http://api.controlasistenciasexto/docentes/1
 
 ### Modificar Docente
-PUT http://api.asistenciasexto/docentes/1
+PUT http://api.controlasistenciasexto/docentes/1
 Content-Type: application/json
 
 {
@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 
 ### Adicionar Docente
-POST http://api.asistenciasexto/docentes
+POST http://api.controlasistenciasexto/docentes
 Content-Type: application/json
 
 {
@@ -25,4 +25,4 @@ Content-Type: application/json
 }
 
 ### Eliminar Docente
-DELETE http://api.asistenciasexto/docentes/7
+DELETE http://api.controlasistenciasexto/docentes/1

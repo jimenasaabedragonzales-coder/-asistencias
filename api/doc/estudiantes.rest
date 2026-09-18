@@ -1,8 +1,11 @@
 ### Consulta de estudiantes
-GET http://api.asistenciasexto/estudiantes
+GET http://api.controlasistenciasexto/estudiantes
+
+### Consulta de estudiante por id
+GET http://api.controlasistenciasexto/estudiantes/1
 
 ### Modificar Estudiante
-PUT http://api.asistenciasexto/estudiantes/1
+PUT http://api.controlasistenciasexto/estudiantes/1
 Content-Type: application/json
 
 {
@@ -13,7 +16,7 @@ Content-Type: application/json
 }
 
 ### Adicionar Estudiante
-POST http://api.asistenciasexto/estudiantes
+POST http://api.controlasistenciasexto/estudiantes
 Content-Type: application/json
 
 {
@@ -24,4 +27,4 @@ Content-Type: application/json
 }
 
 ### Eliminar Estudiante
-DELETE http://api.asistenciasexto/estudiantes/13
+DELETE http://api.controlasistenciasexto/estudiantes/1

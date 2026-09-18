@@ -1,11 +1,11 @@
 ### Consulta de inscripciones
-GET http://api.asistenciasexto/inscripciones
+GET http://api.controlasistenciasexto/inscripciones
 
 ### Consulta de inscripcion por id
-GET http://api.asistenciasexto/inscripciones/1
+GET http://api.controlasistenciasexto/inscripciones/1
 
 ### Modificar inscripcion
-PUT http://api.asistenciasexto/inscripciones/1
+PUT http://api.controlasistenciasexto/inscripciones/1
 Content-Type: application/json
 
 {
@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 
 ### Adicionar inscripcion
-POST http://api.asistenciasexto/inscripciones
+POST http://api.controlasistenciasexto/inscripciones
 Content-Type: application/json
 
 {
@@ -25,4 +25,4 @@ Content-Type: application/json
 }
 
 ### Eliminar inscripcion
-DELETE http://api.asistenciasexto/inscripciones/1
+DELETE http://api.controlasistenciasexto/inscripciones/1

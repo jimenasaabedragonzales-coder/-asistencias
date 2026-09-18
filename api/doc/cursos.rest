@@ -1,11 +1,11 @@
 ### Consulta de cursos
-GET http://api.asistenciasexto/cursos
+GET http://api.controlasistenciasexto/cursos
 
 ### Consulta de cursos por id
-GET http://api.asistenciasexto/cursos/1
+GET http://api.controlasistenciasexto/cursos/1
 
 ### Modificar Curso
-PUT http://api.asistenciasexto/cursos/1 
+PUT http://api.controlasistenciasexto/cursos/1 
 Content-Type: application/json
 
 {
@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 
 ### Adicionar Curso
-POST http://api.asistenciasexto/cursos
+POST http://api.controlasistenciasexto/cursos
 Content-Type: application/json
 
 {
@@ -25,4 +25,4 @@ Content-Type: application/json
 }
 
 ### Eliminar Curso
-DELETE http://api.asistenciasexto/cursos/1
+DELETE http://api.controlasistenciasexto/cursos/1
