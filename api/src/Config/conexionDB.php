@@ -18,6 +18,10 @@ class ConexionPDO
             PDO::ATTR_EMULATE_PREPARES => false,
         ];
 
+        if (SSL_CA !== '' && !is_file(SSL_CA)) {
+            throw new RuntimeException('El certificado configurado en DB_SSL_CA no existe.');
+        }
+
         if (SSL_CA !== '' && defined('PDO::MYSQL_ATTR_SSL_CA')) {
             $options[PDO::MYSQL_ATTR_SSL_CA] = SSL_CA;
             $options[PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT] = true;

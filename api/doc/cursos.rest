@@ -5,7 +5,7 @@ GET http://api.controlasistenciasexto/cursos
 GET http://api.controlasistenciasexto/cursos/1
 
 ### Modificar Curso
-PUT http://api.controlasistenciasexto/cursos/1 
+PUT http://api.controlasistenciasexto/cursos/1
 Content-Type: application/json
 
 {

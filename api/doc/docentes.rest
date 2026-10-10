@@ -11,18 +11,16 @@ Content-Type: application/json
 {
   "nombre":"Juan",
   "apellido":"Perez",
-  "telefono":"70011111"
-}
+  "telefono":"70011111"}
 
 ### Adicionar Docente
 POST http://api.controlasistenciasexto/docentes
 Content-Type: application/json
 
 {
-  "nombre":"Juanito",
+  "nombre":"Juan",
   "apellido":"Perezoso",
   "telefono":"70022222"
 }
-
 ### Eliminar Docente
 DELETE http://api.controlasistenciasexto/docentes/1

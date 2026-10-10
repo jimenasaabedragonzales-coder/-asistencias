@@ -9,7 +9,7 @@ PUT http://api.controlasistenciasexto/materias/1
 Content-Type: application/json
 
 {
-	"nombre_materia": "Matemáticas"
+	"nombre_materia": "Matematicas"
 }
 
 ### Adicionar materia

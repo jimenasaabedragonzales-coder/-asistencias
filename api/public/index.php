@@ -1,6 +1,44 @@
 <?php
+$allowedOrigins = [
+    'http://localhost',
+    'http://127.0.0.1',
+    'http://frontend.asistenciasexto',
+];
+$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+
+if (in_array($origin, $allowedOrigins, true)) {
+    header('Access-Control-Allow-Origin: ' . $origin);
+    header('Vary: Origin');
+    header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+    header('Access-Control-Allow-Headers: Content-Type');
+}
+
+header('Content-Type: application/json; charset=utf-8');
+
+set_exception_handler(static function (Throwable $error): void {
+    error_log((string) $error);
+    http_response_code(500);
+
+    $message = 'Error interno del servidor. Revisa el registro de PHP.';
+    if ($error instanceof RuntimeException && $error->getPrevious() instanceof PDOException) {
+        $message = 'No se pudo conectar con la base de datos. Revisa host, puerto, credenciales y certificado SSL en .env.';
+    } elseif ($error instanceof RuntimeException && str_contains($error->getMessage(), 'DB_SSL_CA')) {
+        $message = $error->getMessage();
+    }
+
+    echo json_encode([
+        'estado' => false,
+        'message' => $message,
+    ]);
+});
+
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
-    http_response_code(200);
+    if ($origin !== '' && !in_array($origin, $allowedOrigins, true)) {
+        http_response_code(403);
+        exit;
+    }
+
+    http_response_code(204);
     exit;
 }
 

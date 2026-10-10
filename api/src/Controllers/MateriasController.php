@@ -24,6 +24,7 @@ class MateriasController{
 
     public function update($id)
     {
+       
         $jsonData = file_get_contents('php://input');
         $data = json_decode($jsonData, true);
 
@@ -37,6 +38,7 @@ class MateriasController{
         }
 
         $errores = $this->validarDatos($data);
+
         if (count($errores) > 0) {
             http_response_code(422);
             echo json_encode(["status" => "error", "message" => "Existen errores de validacion", "errores" => $errores]);

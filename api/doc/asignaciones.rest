@@ -1,11 +1,11 @@
 ### Consulta de asignaciones
-GET http://api.asistenciasexto/asignaciones
+GET http://api.controlasistenciasexto/asignaciones
 
 ### Consulta de asignaciones por id
-GET http://api.asistenciasexto/asignaciones/1
+GET http://api.controlasistenciasexto/asignaciones/1
 
 ### Modificar Asignaciones
-PUT http://api.asistenciasexto/asignaciones/1
+PUT http://api.controlasistenciasexto/asignaciones/1
 Content-Type: application/json
 
 {
@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 
 ### Adicionar Asignacion    
-POST http://api.asistenciasexto/asignaciones
+POST http://api.controlasistenciasexto/asignaciones
 Content-Type: application/json
 
 {
@@ -25,4 +25,4 @@ Content-Type: application/json
 }
 
 ### Eliminar Asignacion
-DELETE http://api.asistenciasexto/asignaciones/4
+DELETE http://api.controlasistenciasexto/asignaciones/4

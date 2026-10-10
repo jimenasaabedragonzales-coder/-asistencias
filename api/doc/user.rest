@@ -5,13 +5,13 @@ GET http://api.controlasistenciasexto/users
 GET http://api.controlasistenciasexto/users/1
 
 ### Modificar Usuario
-PUT http://api.controlasistenciasexto/users/1
+PUT http://api.controlasistenciasexto/users/5
 Content-Type: application/json
 
 {
-  "username": "mquispe2",
-  "password_hash": "$2y$10$hash_de_ejemplo2",
-  "id_docente": 1,
+  "username": "mqureyt2",
+  "password_hash": "$2y$sgrhrththo2",
+  "id_docente": 4,
   "id_estudiante": null
 }
 
@@ -20,7 +20,7 @@ POST http://api.controlasistenciasexto/users
 Content-Type: application/json
 
 {
-  "username": "admin22",
+  "username": "prueba_{{$guid}}",
   "password_hash": "$2y$10$hash_de_ejemplo",
   "id_docente": null,
   "id_estudiante": null
@@ -28,4 +28,3 @@ Content-Type: application/json
 
 ### Eliminar Usuario
 DELETE http://api.controlasistenciasexto/users/1
-

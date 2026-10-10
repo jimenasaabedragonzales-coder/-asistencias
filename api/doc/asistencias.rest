@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 
 ### Adicionar Asistencia
-POSThttp://api.controlasistenciasexto/asistencias
+POST http://api.controlasistenciasexto/asistencias
 Content-Type: application/json
 
 {
